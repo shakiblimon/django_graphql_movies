@@ -109,7 +109,7 @@ class CreateMovie(graphene.Mutation):
     actor = graphene.Field(MovieType)
 
     @staticmethod
-    def mutation(root, info, input = None):
+    def mutate(root, info, input = None):
         ok = True
         actors = []
         for actor_input in input.actors:
@@ -126,8 +126,35 @@ class CreateMovie(graphene.Mutation):
         return CreateMovie(ok=ok, movie=movie_instance)
 
 
+'''
+|       Create mutation for update movie
+'''
+class UpdateMovie(graphene.Mutation):
+    class Arguments:
+        id = graphene.Int(required=True)
+        input = MovieInput(required = True)
 
+    ok = graphene.Boolean()
+    movie = graphene.Field(MovieType)
 
+    @staticmethod
 
-
-
+    def mutate(root,info,id, input=None):
+        ok = False
+        movie_instance = Movie.objects.get(pk=id)
+        if movie_instance:
+            ok = True
+            actors = []
+            for actor_input in input.actors:
+                actor = Actor.objects.get(pk=actor_input.id)
+                if actor is None:
+                    return CreateMovie(ok=False, movie=None)
+                actors.append(actor)
+            movie_instance = Movie(
+                title=input.title,
+                year=input.year
+            )
+            movie_instance.save()
+            movie_instance.actors.set(actors)
+            return UpdateMovie(ok=ok, movie=movie_instance)
+        return UpdateMovie(ok=ok, movie=None)
