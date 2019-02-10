@@ -42,6 +42,8 @@ class Query(ObjectType):
         return Movie.objects.all()
 
 
+#Making Mutation
+
 class ActorInput(graphene.InputObjectType):
     id = graphene.ID()
     name = graphene.String()
@@ -51,6 +53,7 @@ class MovieInput(graphene.InputObjectType):
     title = graphene.String()
     actors = graphene.List(ActorInput)
     year = graphene.Int()
+
 
 
 
