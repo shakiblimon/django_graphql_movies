@@ -56,4 +56,25 @@ class MovieInput(graphene.InputObjectType):
 
 
 
+'''
+    create mutation for actors
+'''
+class CreateActor(graphene.Mutation):
+    class Arguments:
+        input = ActorInput(required = True)
+
+    ok = graphene.Boolean()
+    actor = graphene.Field(ActorType)
+
+    @staticmethod
+
+    def mutate(root, info, input = None):
+        ok = True
+        actor_instance = Actor(name=input.name)
+        actor_instance.save()
+
+
+
+
+
 
