@@ -158,6 +158,9 @@ class UpdateMovie(graphene.Mutation):
             movie_instance.actors.set(actors)
             return UpdateMovie(ok=ok, movie=movie_instance)
         return UpdateMovie(ok=ok, movie=None)
+
+    # All object mutation
+
 class Mutation(graphene.ObjectType):
     create_actor = CreateActor.Field()
     update_actor = UpdateActor.Field()

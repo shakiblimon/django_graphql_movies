@@ -42,7 +42,7 @@ INSTALLED_APPS = [
 ]
 
 GRAPHENE = {
-    'SCHEMA': 'django_graphql_movies.schema.schema',
+    'SCHEMA': 'django_graphql_movies.schema.schema'
 }
 
 MIDDLEWARE = [
