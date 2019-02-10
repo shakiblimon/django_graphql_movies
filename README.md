@@ -1,1 +1,2 @@
-# django_graphql_movies
+# Django Graphql Movies
+https://stackabuse.com/building-a-graphql-api-with-django/

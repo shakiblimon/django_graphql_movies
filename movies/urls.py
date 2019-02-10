@@ -1,0 +1,9 @@
+from django.urls import path
+from django.conf.urls import url ,include
+from graphene_django.views import GraphQLView
+
+from django_graphql_movies import schema
+
+urlpatterns = [
+     path('grahql', GraphQLView.as_view(graphiql=True, schema=schema)),
+ ]
