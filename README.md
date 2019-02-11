@@ -27,8 +27,8 @@ type Movie {
 A query specifies what data can be retrieved and what's required to get to it:
 ```.env
 type Query {  
-  actor(id: ID!): Actor
-  movie(id: ID!): Movie
+  actor(id: ID): Actor
+  movie(id: ID): Movie
   actors: [Actor]
   movies: [Movie]
 }
@@ -53,8 +53,8 @@ type ActorPayload {
 type Mutation {  
   createActor(input: ActorInput) : ActorPayload
   createMovie(input: MovieInput) : MoviePayload
-  updateActor(id: ID!, input: ActorInput) : ActorPayload
-  updateMovie(id: ID!, input: MovieInput) : MoviePayload
+  updateActor(id: ID, input: ActorInput) : ActorPayload
+  updateMovie(id: ID, input: MovieInput) : MoviePayload
 }
 ```
 #### Defining the Schema
@@ -67,3 +67,4 @@ schema {
 ```
 
 Updated Ongoing
+
