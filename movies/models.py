@@ -6,6 +6,9 @@ class Actor(models.Model):
      name = models.CharField(max_length=100)
 
      def __str__(self):
+         """
+         :return:
+         """
          return self.name
 
      class Meta:
@@ -17,6 +20,9 @@ class Movie(models.Model):
     year = models.IntegerField()
 
     def __str__(self):
+        """
+        :return:
+        """
         return self.title
 
     class Meta:

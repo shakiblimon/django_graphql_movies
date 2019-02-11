@@ -21,6 +21,11 @@ class Query(ObjectType):
     movies = graphene.List(MovieType)
 
     def resolve_actor(self,info, **kwargs):
+        """
+        :param info:
+        :param kwargs:
+        :return:
+        """
         id = kwargs.get('id')
 
         if id is not None:
@@ -28,6 +33,11 @@ class Query(ObjectType):
         return None
 
     def resolve_movie(self,info,**kwargs):
+        """
+        :param info:
+        :param kwargs:
+        :return:
+        """
         id = kwargs.get('id')
 
         if id is not None:
@@ -36,9 +46,19 @@ class Query(ObjectType):
 
 
     def resolve_actors(self,info,**kwargs):
+        """
+        :param info:
+        :param kwargs:
+        :return:
+        """
         return Actor.objects.all()
 
     def resolve_movies(self,info,**kwargs):
+        """
+        :param info:
+        :param kwargs:
+        :return:
+        """
         return Movie.objects.all()
 
 
@@ -69,6 +89,12 @@ class CreateActor(graphene.Mutation):
     @staticmethod
 
     def mutate(root, info, input = None):
+        """
+        :param root:
+        :param info:
+        :param input:
+        :return:
+        """
         ok = True
         actor_instance = Actor(name=input.name)
         actor_instance.save()
@@ -86,6 +112,12 @@ class UpdateActor(graphene.Mutation):
     @staticmethod
 
     def mutate(root, info , input = None):
+        """
+        :param root:
+        :param info:
+        :param input:
+        :return:
+        """
         ok = False
         actor_instance = Actor.objects.get(pk=id)
 
@@ -110,6 +142,12 @@ class CreateMovie(graphene.Mutation):
 
     @staticmethod
     def mutate(root, info, input = None):
+        """
+        :param root:
+        :param info:
+        :param input:
+        :return:
+        """
         ok = True
         actors = []
         for actor_input in input.actors:
@@ -140,6 +178,13 @@ class UpdateMovie(graphene.Mutation):
     @staticmethod
 
     def mutate(root,info,id, input=None):
+        """
+        :param root:
+        :param info:
+        :param id:
+        :param input:
+        :return:
+        """
         ok = False
         movie_instance = Movie.objects.get(pk=id)
         if movie_instance:
@@ -159,7 +204,7 @@ class UpdateMovie(graphene.Mutation):
             return UpdateMovie(ok=ok, movie=movie_instance)
         return UpdateMovie(ok=ok, movie=None)
 
-    # All object mutation
+# All object mutation
 
 class Mutation(graphene.ObjectType):
     create_actor = CreateActor.Field()
