@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="08f4ce5c-b65b-4e14-9dbf-74cbe5a4414d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +20,8 @@
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="SPLIT">
-              <first_editor relative-caret-position="17">
-                <caret line="1" selection-start-line="1" selection-end-line="1" />
+              <first_editor relative-caret-position="340">
+                <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
               </first_editor>
               <second_editor />
             </state>
@@ -159,7 +160,8 @@
       <workItem from="1549788915355" duration="8017000" />
       <workItem from="1549797528917" duration="2333000" />
       <workItem from="1549799890290" duration="604000" />
-      <workItem from="1549856720412" duration="230000" />
+      <workItem from="1549856720412" duration="1014000" />
+      <workItem from="1549857746197" duration="27000" />
     </task>
     <task id="LOCAL-00001" summary="model created">
       <created>1549789516470</created>
@@ -252,16 +254,31 @@
       <option name="project" value="LOCAL" />
       <updated>1549799810829</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="ReadMe Updated">
+      <created>1549857064390</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1549857064390</updated>
+    </task>
+    <task id="LOCAL-00015" summary="ReadMe Updated">
+      <created>1549857761651</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1549857761651</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="11188000" />
+    <option name="totallyTimeSpent" value="11995000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1413" y="-4" width="1553" height="904" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21906023" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22170748" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -301,7 +318,8 @@
     <MESSAGE value="Mutation object all fields added" />
     <MESSAGE value="schema and settings updated" />
     <MESSAGE value="Project app url updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Project app url updated" />
+    <MESSAGE value="ReadMe Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="ReadMe Updated" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/requirements.txt">
@@ -369,8 +387,8 @@
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
-          <first_editor relative-caret-position="17">
-            <caret line="1" selection-start-line="1" selection-end-line="1" />
+          <first_editor relative-caret-position="340">
+            <caret line="68" column="6" selection-start-line="68" selection-start-column="6" selection-end-line="68" selection-end-column="6" />
           </first_editor>
           <second_editor />
         </state>
