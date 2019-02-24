@@ -14,13 +14,6 @@
     }
   },
   {
-    "model": "movies.actor",
-    "pk": 3,
-    "fields": {
-      "name": "Alu potol"
-    }
-  },
-  {
     "model": "movies.movie",
     "pk": 1,
     "fields": {
