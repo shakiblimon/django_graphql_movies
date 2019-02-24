@@ -1,3 +1,6 @@
+__version__ ="1.0.1"
+__author__ = "Shakib Limon"
+
 from django.db import models
 
 # Create your models here.

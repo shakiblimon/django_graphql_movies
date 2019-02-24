@@ -1,3 +1,6 @@
+__version__ ="1.0.1"
+__author__ = "Shakib Limon"
+
 """
 Django settings for django_graphql_movies project.
 

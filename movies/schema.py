@@ -1,4 +1,8 @@
+__version__ ="1.0.1"
+__author__ = "Shakib Limon"
+
 import graphene
+from graphene import ObjectType
 from graphene_django import DjangoObjectType
 
 from movies.models import Actor, Movie, Hero
@@ -25,7 +29,7 @@ class HeroType(DjangoObjectType):
 ####    new segment added end     ####
 
 
-class Query(DjangoObjectType):
+class Query(ObjectType):
     actor = graphene.Field(ActorType, id=graphene.Int())
     movie = graphene.Field(MovieType, id=graphene.Int())
     actors = graphene.List(ActorType)

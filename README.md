@@ -1,4 +1,6 @@
 # Django Graphql Movies
+It's a testing project for quearing movie and actors data using graphql API. 
+
 **GraphQL** is a query language and server runtime that 
 allows us to retrieve and manipulate data.
 We leverage GraphQL's strongly-typed system to define the data we want available to the API. We then create a schema 
@@ -65,6 +67,12 @@ schema {
   mutation: Mutation
 }
 ```
+#### Technology
+* Django 2.1.5
+* Python 3.6
+* Graphene Django 2.2.0
+* Graphene 2.1.3
 
-Update Ongoing
+
+
 

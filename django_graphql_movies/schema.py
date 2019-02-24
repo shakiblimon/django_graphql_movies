@@ -1,3 +1,6 @@
+__version__ ="1.0.1"
+__author__ = "Shakib Limon"
+
 import graphene
 import movies.schema
 
