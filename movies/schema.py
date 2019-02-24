@@ -1,8 +1,7 @@
 import graphene
-from graphene import ObjectType
 from graphene_django import DjangoObjectType
 
-from movies.models import Actor, Movie
+from movies.models import Actor, Movie, Hero
 
 
 class ActorType(DjangoObjectType):
@@ -14,11 +13,28 @@ class MovieType(DjangoObjectType):
         model = Movie
 
 
-class Query(ObjectType):
+'''
+        New Segment with graphql hero and movie 
+'''
+
+class HeroType(DjangoObjectType):
+    class Meta:
+        model = Hero
+
+
+####    new segment added end     ####
+
+
+class Query(DjangoObjectType):
     actor = graphene.Field(ActorType, id=graphene.Int())
     movie = graphene.Field(MovieType, id=graphene.Int())
     actors = graphene.List(ActorType)
     movies = graphene.List(MovieType)
+    heros = graphene.List(HeroType)         # Newly Added segment for new model hero
+
+    def resolve_heroes(self, info, **kwargs):
+        return Hero.objects.all()
+    #################   New Segment Added Finished  ##########################
 
     def resolve_actor(self,info, **kwargs):
         """
@@ -60,6 +76,7 @@ class Query(ObjectType):
         :return:
         """
         return Movie.objects.all()
+
 
 
 #Making Mutation
@@ -130,7 +147,7 @@ class UpdateActor(graphene.Mutation):
 
 
 '''
-|       Create mutations for movie
+       Create mutations for movie
 '''
 
 class CreateMovie(graphene.Mutation):
@@ -165,7 +182,7 @@ class CreateMovie(graphene.Mutation):
 
 
 '''
-|       Create mutation for update movie
+       Create mutation for update movie
 '''
 class UpdateMovie(graphene.Mutation):
     class Arguments:
@@ -211,6 +228,9 @@ class Mutation(graphene.ObjectType):
     update_actor = UpdateActor.Field()
     create_movie = CreateMovie.Field()
     update_movie = UpdateMovie.Field()
+
+
+
 
 
 
