@@ -18,8 +18,18 @@
     "pk": 1,
     "fields": {
       "title": "Creed",
-      "actors": [1, 2],
+      "actors": [1 , 2 ],
       "year": "2015"
+    }
+  },
+
+    {
+    "model": "movies.movie",
+    "pk": 2,
+    "fields": {
+      "title": "Hello",
+      "actors": [3],
+      "year": "2018"
     }
   }
 ]
