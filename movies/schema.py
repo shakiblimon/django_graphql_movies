@@ -5,7 +5,7 @@ import graphene
 from graphene import ObjectType
 from graphene_django import DjangoObjectType
 
-from movies.models import Actor, Movie, Hero
+from movies.models import Actor, Movie
 
 
 class ActorType(DjangoObjectType):
@@ -17,28 +17,11 @@ class MovieType(DjangoObjectType):
         model = Movie
 
 
-'''
-        New Segment with graphql hero and movie 
-'''
-
-class HeroType(DjangoObjectType):
-    class Meta:
-        model = Hero
-
-
-####    new segment added end     ####
-
-
 class Query(ObjectType):
     actor = graphene.Field(ActorType, id=graphene.Int())
     movie = graphene.Field(MovieType, id=graphene.Int())
     actors = graphene.List(ActorType)
     movies = graphene.List(MovieType)
-    heros = graphene.List(HeroType)         # Newly Added segment for new model hero
-
-    def resolve_heroes(self, info, **kwargs):
-        return Hero.objects.all()
-    #################   New Segment Added Finished  ##########################
 
     def resolve_actor(self,info, **kwargs):
         """

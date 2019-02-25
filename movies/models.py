@@ -30,21 +30,3 @@ class Movie(models.Model):
 
     class Meta:
         ordering = ('title',)
-
-
-'''
-            Add another model 
-'''
-
-class Hero(models.Model):
-    name = models.CharField(max_length=100)
-    gender = models.CharField(max_length=100, choices=(('M','Male'),('F','Female')), default = 'M')
-
-    movie = models.CharField(max_length=100)
-
-
-    def __str__(self):
-        """
-        :return:
-        """
-        return self.name
