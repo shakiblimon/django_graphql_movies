@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
+<<<<<<< HEAD
     <list default="true" id="08f4ce5c-b65b-4e14-9dbf-74cbe5a4414d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
@@ -8,28 +9,35 @@
       <change beforePath="$PROJECT_DIR$/movies/schema.py" beforeDir="false" afterPath="$PROJECT_DIR$/movies/schema.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+=======
+    <list default="true" id="18af4656-28f7-4de4-be0f-68f9acb0a74c" name="Default Changelist" comment="" />
+>>>>>>> origin/master
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="DjangoConsoleOptions" custom-start-script="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)">
-    <option name="myCustomStartScript" value="import sys; print('Python %s on %s' % (sys.version, sys.platform))&#10;import django; print('Django %s' % django.get_version())&#10;sys.path.extend([WORKING_DIR_AND_PYTHON_PATHS])&#10;if 'setup' in dir(django): django.setup()&#10;import django_manage_shell; django_manage_shell.run(PROJECT_ROOT)" />
-  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+<<<<<<< HEAD
             <state split_layout="SPLIT">
               <first_editor relative-caret-position="51">
                 <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+=======
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="555">
+                <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+>>>>>>> origin/master
               </first_editor>
               <second_editor />
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/requirements.txt">
           <provider selected="true" editor-type-id="text-editor">
@@ -87,19 +95,22 @@
           </provider>
         </entry>
       </file>
+=======
+>>>>>>> origin/master
     </leaf>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Update_Home" />
+        <entry key="$PROJECT_DIR$" value="merge_shakib" />
       </map>
     </option>
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
+<<<<<<< HEAD
         <option value="$PROJECT_DIR$/movies/admin.py" />
         <option value="$PROJECT_DIR$/movies/urls.py" />
         <option value="$PROJECT_DIR$/schema.py" />
@@ -111,38 +122,40 @@
         <option value="$PROJECT_DIR$/requirements.txt" />
         <option value="$PROJECT_DIR$/movies/models.py" />
         <option value="$PROJECT_DIR$/movies/schema.py" />
+=======
+        <option value="$PROJECT_DIR$/.idea/django_graphql_movies.iml" />
+>>>>>>> origin/master
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1413" />
-    <option name="y" value="-4" />
-    <option name="width" value="1553" />
-    <option name="height" value="904" />
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
-    <navigator proportions="" version="1">
+    <navigator currentView="Scope" currentSubView="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope" proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+<<<<<<< HEAD
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
+=======
+      <pane id="ProjectPane" />
+      <pane id="Scope">
+        <subPane subId="Scope 'Project Files'; set:Project Files; class com.intellij.psi.search.scope.ProjectFilesScope">
+>>>>>>> origin/master
           <expand>
             <path>
-              <item name="django_graphql_movies" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_graphql_movies" type="462c0819:PsiDirectoryNode" />
+              <item name="django_graphql_movies" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
             </path>
             <path>
-              <item name="django_graphql_movies" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_graphql_movies" type="462c0819:PsiDirectoryNode" />
-              <item name="django_graphql_movies" type="462c0819:PsiDirectoryNode" />
+              <item name="django_graphql_movies" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name=".idea" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
             <path>
-              <item name="django_graphql_movies" type="b2602c69:ProjectViewProjectNode" />
-              <item name="django_graphql_movies" type="462c0819:PsiDirectoryNode" />
-              <item name="movies" type="462c0819:PsiDirectoryNode" />
+              <item name="django_graphql_movies" type="3d21c010:ScopeViewTreeModel$ProjectNode" />
+              <item name="" type="442cc68d:ScopeViewTreeModel$RootNode" />
+              <item name="movies" type="9f88c78c:ScopeViewTreeModel$FileNode" />
             </path>
           </expand>
           <select />
@@ -150,6 +163,7 @@
       </pane>
     </panes>
   </component>
+<<<<<<< HEAD
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
@@ -161,6 +175,8 @@
       <recent name="$PROJECT_DIR$/" />
     </key>
   </component>
+=======
+>>>>>>> origin/master
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>
@@ -173,40 +189,16 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="django_graphql_movies" type="Python.DjangoServer" factoryName="Django server">
-      <module name="django_graphql_movies" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="launchJavascriptDebuger" value="false" />
-      <option name="port" value="8000" />
-      <option name="host" value="" />
-      <option name="additionalOptions" value="" />
-      <option name="browserUrl" value="" />
-      <option name="runTestServer" value="false" />
-      <option name="runNoReload" value="false" />
-      <option name="useCustomRunCommand" value="false" />
-      <option name="customRunCommand" value="" />
-      <method v="2" />
-    </configuration>
-  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="08f4ce5c-b65b-4e14-9dbf-74cbe5a4414d" name="Default Changelist" comment="" />
-      <created>1549788913535</created>
+      <changelist id="3497759e-4b8c-45aa-a5ff-6cc93b241a49" name="Default Changelist" comment="" />
+      <created>1549825555229</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
+<<<<<<< HEAD
       <updated>1549788913535</updated>
       <workItem from="1549788915355" duration="8017000" />
       <workItem from="1549797528917" duration="2333000" />
@@ -219,56 +211,28 @@
       <workItem from="1550981294471" duration="9136000" />
       <workItem from="1551089040317" duration="2655000" />
       <workItem from="1551093986520" duration="115000" />
+=======
+      <updated>1549825555229</updated>
+      <workItem from="1549825557390" duration="1378000" />
+      <workItem from="1551017197970" duration="158000" />
+      <workItem from="1551017363038" duration="1226000" />
+>>>>>>> origin/master
     </task>
-    <task id="LOCAL-00001" summary="model created">
-      <created>1549789516470</created>
+    <task id="LOCAL-00001" summary="Updated">
+      <created>1549826846862</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1549789516470</updated>
+      <updated>1549826846862</updated>
     </task>
-    <task id="LOCAL-00002" summary="Grapehene and schema settings added">
-      <created>1549789863744</created>
+    <task id="LOCAL-00002" summary="Updated Data Sources">
+      <created>1551017430116</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1549789863744</updated>
+      <updated>1551017430116</updated>
     </task>
-    <task id="LOCAL-00003" summary="Schema Muatation Updated">
-      <created>1549792534169</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1549792534169</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Schema updated">
-      <created>1549792631350</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1549792631350</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Project schema added and updated">
-      <created>1549792873615</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1549792873615</updated>
-    </task>
-    <task id="LOCAL-00006" summary="making mutation">
-      <created>1549793090469</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1549793090469</updated>
-    </task>
-    <task id="LOCAL-00007" summary="create mutation for actors">
-      <created>1549793388220</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1549793388220</updated>
-    </task>
+<<<<<<< HEAD
     <task id="LOCAL-00008" summary="Update Actor mutation">
       <created>1549793823969</created>
       <option name="number" value="00008" />
@@ -392,6 +356,17 @@
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20089859" />
+=======
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="2762000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="-4" width="1366" height="772" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19469696" />
+>>>>>>> origin/master
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -402,10 +377,10 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3299363" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Terminal" order="11" weight="0.3299363" />
+      <window_info anchor="bottom" id="Terminal" order="11" weight="0.32868218" />
       <window_info anchor="bottom" id="Python Console" order="12" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -417,6 +392,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+<<<<<<< HEAD
   <component name="VcsManagerConfiguration">
     <MESSAGE value="model created" />
     <MESSAGE value="Grapehene and schema settings added" />
@@ -475,11 +451,20 @@
         <state split_layout="SPLIT">
           <first_editor relative-caret-position="51">
             <caret line="3" column="1" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
+=======
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="555">
+            <caret line="61" column="24" lean-forward="true" selection-start-line="61" selection-start-column="24" selection-end-line="61" selection-end-column="24" />
+>>>>>>> origin/master
           </first_editor>
           <second_editor />
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
     <entry file="file://$PROJECT_DIR$/requirements.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -525,5 +510,7 @@
         </state>
       </provider>
     </entry>
+=======
+>>>>>>> origin/master
   </component>
 </project>
