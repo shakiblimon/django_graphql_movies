@@ -1,4 +1,4 @@
-__version__ ="1.0.1"
+__version__ = "1.0.1"
 __author__ = "Shakib Limon"
 
 import graphene
@@ -6,11 +6,13 @@ from graphene import ObjectType
 from graphene_django import DjangoObjectType
 
 from movies.models import Actor, Movie
+import graphql_jwt
 
 
 class ActorType(DjangoObjectType):
     class Meta:
         model = Actor
+
 
 class MovieType(DjangoObjectType):
     class Meta:
@@ -23,19 +25,22 @@ class Query(ObjectType):
     actors = graphene.List(ActorType)
     movies = graphene.List(MovieType)
 
-    def resolve_actor(self,info, **kwargs):
+    def resolve_actor(self, context, info, **kwargs):
         """
         :param info:
         :param kwargs:
         :return:
         """
         id = kwargs.get('id')
-
         if id is not None:
             return Actor.objects.get(pk=id)
         return None
 
-    def resolve_movie(self,info,**kwargs):
+        if not Actor.is_authenticated:
+            raise Exception('Authentication credentials were not provided ')
+        return None
+
+    def resolve_movie(self, info, **kwargs):
         """
         :param info:
         :param kwargs:
@@ -47,8 +52,7 @@ class Query(ObjectType):
             return Movie.objects.get(pk=id)
         return None
 
-
-    def resolve_actors(self,info,**kwargs):
+    def resolve_actors(self, info, **kwargs):
         """
         :param info:
         :param kwargs:
@@ -56,7 +60,7 @@ class Query(ObjectType):
         """
         return Actor.objects.all()
 
-    def resolve_movies(self,info,**kwargs):
+    def resolve_movies(self, info, **kwargs):
         """
         :param info:
         :param kwargs:
@@ -65,12 +69,12 @@ class Query(ObjectType):
         return Movie.objects.all()
 
 
-
-#Making Mutation
+# Making Mutation
 
 class ActorInput(graphene.InputObjectType):
     id = graphene.ID()
     name = graphene.String()
+
 
 class MovieInput(graphene.InputObjectType):
     id = graphene.ID()
@@ -79,20 +83,20 @@ class MovieInput(graphene.InputObjectType):
     year = graphene.Int()
 
 
-
 '''
     create mutation for actors
 '''
+
+
 class CreateActor(graphene.Mutation):
     class Arguments:
-        input = ActorInput(required = True)
+        input = ActorInput(required=True)
 
     ok = graphene.Boolean()
     actor = graphene.Field(ActorType)
 
     @staticmethod
-
-    def mutate(root, info, input = None):
+    def mutate(root, info, input=None):
         """
         :param root:
         :param info:
@@ -102,20 +106,23 @@ class CreateActor(graphene.Mutation):
         ok = True
         actor_instance = Actor(name=input.name)
         actor_instance.save()
+
+
 '''
     Update Actor mutation
 '''
+
+
 class UpdateActor(graphene.Mutation):
     class Arguments:
-        id = graphene.Int(required =True)
-        input = ActorInput(required = True)
+        id = graphene.Int(required=True)
+        input = ActorInput(required=True)
 
     ok = graphene.Boolean()
     actor = graphene.Field(ActorType)
 
     @staticmethod
-
-    def mutate(root, info , input = None):
+    def mutate(root, info, input=None):
         """
         :param root:
         :param info:
@@ -129,23 +136,24 @@ class UpdateActor(graphene.Mutation):
             ok = True
             actor_instance.name = input.name
             actor_instance.save()
-            return UpdateActor(ok=ok,actor=actor_instance)
-        return UpdateActor(ok=ok,actor =None)
+            return UpdateActor(ok=ok, actor=actor_instance)
+        return UpdateActor(ok=ok, actor=None)
 
 
 '''
        Create mutations for movie
 '''
 
+
 class CreateMovie(graphene.Mutation):
     class Arguments:
-        input = MovieInput(required = True)
+        input = MovieInput(required=True)
 
     ok = graphene.Boolean()
     actor = graphene.Field(MovieType)
 
     @staticmethod
-    def mutate(root, info, input = None):
+    def mutate(root, info, input=None):
         """
         :param root:
         :param info:
@@ -171,17 +179,18 @@ class CreateMovie(graphene.Mutation):
 '''
        Create mutation for update movie
 '''
+
+
 class UpdateMovie(graphene.Mutation):
     class Arguments:
         id = graphene.Int(required=True)
-        input = MovieInput(required = True)
+        input = MovieInput(required=True)
 
     ok = graphene.Boolean()
     movie = graphene.Field(MovieType)
 
     @staticmethod
-
-    def mutate(root,info,id, input=None):
+    def mutate(root, info, id, input=None):
         """
         :param root:
         :param info:
@@ -208,6 +217,7 @@ class UpdateMovie(graphene.Mutation):
             return UpdateMovie(ok=ok, movie=movie_instance)
         return UpdateMovie(ok=ok, movie=None)
 
+
 # All object mutation
 
 class Mutation(graphene.ObjectType):
@@ -215,13 +225,3 @@ class Mutation(graphene.ObjectType):
     update_actor = UpdateActor.Field()
     create_movie = CreateMovie.Field()
     update_movie = UpdateMovie.Field()
-
-
-
-
-
-
-
-
-
-
